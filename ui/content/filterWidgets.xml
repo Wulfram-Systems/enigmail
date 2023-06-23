@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!--
+  This file has the following external dependencies:
+      -gFilterActionStrings from FilterEditor.js
+      -gFilterList from FilterEditor.js
+      -gFilter from FilterEditor.js
+      -gCustomActions from FilterEditor.js
+      -gFilterType from FilterEditor.js
+      -checkActionsReorder from FilterEditor.js
+-->
+
+<!DOCTYPE dialog [
+  <!ENTITY % filterEditorDTD SYSTEM "chrome://messenger/locale/FilterEditor.dtd" >
+%filterEditorDTD;
+  <!ENTITY % messengerDTD    SYSTEM "chrome://messenger/locale/messenger.dtd" >
+%messengerDTD;
+  <!ENTITY % enigMailDTD     SYSTEM "chrome://enigmail/locale/enigmail.dtd" >
+%enigMailDTD;
+]>
+
+<bindings   id="enigmailfilterBindings"
+            xmlns="http://www.mozilla.org/xbl"
+            xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+            xmlns:nc="http://home.netscape.com/NC-rdf#"
+            xmlns:xbl="http://www.mozilla.org/xbl">
+
+
+  <binding id="ruleactiontarget-enigmailEncryptTo" extends="chrome://messenger/content/searchWidgets.xml#ruleactiontarget-base">
+    <content>
+      <xul:vbox flex="1">
+        <xul:hbox flex="1" align="center">
+          <xul:label value="&enigmail.filterEditor.encryptToKey.label;"/>
+          <xul:textbox readonly="true" size="12" flex="1"/>
+          <xul:button label="..." oncommand="this.parentNode.parentNode.parentNode.selectPrivateKey()" />
+        </xul:hbox>
+        <xul:hbox align="center">
+          <xul:checkbox oncommand="this.parentNode.parentNode.parentNode.enableFolder()"/>
+          <xul:menulist class="ruleactionitem folderMenuItem"
+                        displayformat="verbose"
+                        flex="1"
+                        oncommand="this.parentNode.parentNode.parentNode.setPicker(event);">
+            <xul:menupopup type="folder"
+                          mode="filing"
+                          class="menulist-menupopup"
+                          flex="1"
+                          showRecent="true"
+                          recentLabel="&recentFolders.label;"
+                          showFileHereLabel="true"/>
+          </xul:menulist>
+        </xul:hbox>
+      </xul:vbox>
+    </content>
+
+    <implementation>
+      <constructor>
+        <![CDATA[
+          Components.utils.import("resource:///modules/MailUtils.js", this);
+          const EnigmailTimer = Components.utils.import("chrome://enigmail/content/modules/timer.jsm").EnigmailTimer;
+
+          let self = this;
+
+          if (this.inputValue && (this.inputValue.value != 'undefined')) {
+            let o;
+            try {
+              o = JSON.parse(this.inputValue.value);
+            }
+            catch (x) {
+              o = {
+                  keyId: this.inputValue.value,
+                  folder: null
+                };
+            }
+
+            this.textbox.setAttribute('value', o.keyId);
+
+            let folder = o.folder ?
+                          this.MailUtils.getFolderForURI(o.folder) :
+                          gFilterList.folder;
+            // An account folder is not a move/copy target; show "Choose Folder".
+            folder = folder.isServer ? null : folder;
+            let menupopup = this.menulist.menupopup;
+            // The menupopup constructor needs to finish first.
+            if (o.folder) {
+              this.checkbox.setAttribute("checked", "true");
+            }
+
+            EnigmailTimer.setTimeout(function() {
+              menupopup.selectFolder(folder);
+              self.enableFolder();
+            }, 0);
+          }
+
+        ]]>
+      </constructor>
+      <field name="inputValue">document.getAnonymousNodes(this)[0]</field>
+      <field name="textbox">document.getAnonymousNodes(this)[0].firstChild.children[1]</field>
+      <field name="checkbox">document.getAnonymousNodes(this)[0].children[1].firstChild</field>
+      <field name="menulist">document.getAnonymousNodes(this)[0].children[1].children[1]</field>
+      <method name="setPicker">
+        <parameter name="aEvent"/>
+        <body>
+          <![CDATA[
+            this.menulist.menupopup.selectFolder(aEvent.target._folder);
+            this.setCombinedValue();
+          ]]>
+        </body>
+      </method>
+      <method name="setCombinedValue">
+        <body>
+          <![CDATA[
+            if (this.checkbox.getAttribute("checked")) {
+              this.inputValue.value = `{"keyId": "${this.textbox.value}", "folder": "${this.menulist.value}" }`;
+            }
+            else {
+              this.inputValue.value = `{"keyId": "${this.textbox.value}", "folder": null }`;
+            }
+          ]]>
+        </body>
+      </method>
+      <method name="enableFolder">
+        <body>
+          <![CDATA[
+            if (this.checkbox.getAttribute("checked")) {
+              this.menulist.removeAttribute("disabled");
+            }
+            else {
+              this.menulist.setAttribute("disabled", "true");
+            }
+            this.setCombinedValue();
+          ]]>
+        </body>
+      </method>
+      <method name="selectPrivateKey">
+        <body>
+          <![CDATA[
+            const EnigmailLocale = Components.utils.import("chrome://enigmail/content/modules/locale.jsm").EnigmailLocale;
+
+            let resultObj = {};
+            let inputObj = {};
+            inputObj.dialogHeader = EnigmailLocale.getString("encryptKeyHeader");
+            inputObj.options = "single,hidexpired,private,nosending,sendlabel=" + EnigmailLocale.getString("filterWidget.selectKey") + ",";
+
+            window.openDialog("chrome://enigmail/content/ui/enigmailKeySelection.xul", "", "dialog,modal,centerscreen,resizable", inputObj, resultObj);
+            try {
+              if (resultObj.cancelled) return;
+              this.textbox.value = resultObj.userList[0];
+              this.setCombinedValue();
+            }
+            catch (ex) {
+              // cancel pressed
+            }
+          ]]>
+        </body>
+      </method>
+    </implementation>
+  </binding>
+
+</bindings>

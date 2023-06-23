@@ -1,0 +1,30 @@
+# @configure_input@
+
+XPI_MODULE_VERS = @PACKAGE_VERSION@
+
+PERL = @PERL@
+PYTHON = @PYTHON@
+
+TB_PATH = "@TB_PATH@"
+TB_ARGS = @TB_ARGS@
+
+TESTS = @enable_tests@
+FIX_LANGUAGES = @enable_fix_lang@
+ENABLE_LANG = @enable_lang@
+ENABLE_POSTBOX = @enable_postbox@
+
+srcdir = @srcdir@
+
+JSUNIT = $(DEPTH)/util/run-jsunit $(PERL) $(TB_PATH) $(TB_ARGS)
+
+ifeq ($(ENABLE_POSTBOX),yes)
+TARGET_TOOL=pbx
+INCLUDE = $(DEPTH)/include/postbox.h
+BUILD = $(DEPTH)/build-pbx
+else
+TARGET_TOOL=itl
+INCLUDE = $(DEPTH)/include/interlink.h
+BUILD = $(DEPTH)/build-il
+endif
+
+DIST = $(BUILD)/dist

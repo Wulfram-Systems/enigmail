@@ -1,0 +1,721 @@
+<!ENTITY enigmail.label                   "Enigmail">
+
+<!ENTITY enigmail.keyUserId.label         "Անձնական էջ / օգտագիրոջ նույնացում">
+<!ENTITY enigmail.keygenTitle.label       "OpenPGP բանալու ստեղծում">
+<!ENTITY enigmail.useForSigning.label     "օգտագործել ստեղծված բանալին նշած օգտատիրոջ անձնական էջի համար">
+<!ENTITY enigmail.keyNoPassphrase.label   "Առանց գաղտնաբառի արտահայտության">
+<!ENTITY enigmail.keyPassphrase.label     "Գաղտնագրի արտահայտություն">
+<!ENTITY enigmail.keyPassphraseRepeat.label "Գաղտնագրի արտահայտություն (կրկին)">
+<!ENTITY enigmail.generateKey.tooltip     "Ստեղծել նոր OpenPGP բանալի գաղտնագրման/ստորագրության համար">
+<!ENTITY enigmail.cancelKey.label         "Չեղարկել">
+<!ENTITY enigmail.cancelKey.tooltip       "Չեղարկել բանալու ստեղծումը">
+<!ENTITY enigmail.keyGen.expiry.title     "Գործման ժամկետ">
+<!ENTITY enigmail.keyGen.expire.label     "Բանալու գործման ժամկետը լրանում է">
+<!ENTITY enigmail.keyGen.days.label       "օր․">
+<!ENTITY enigmail.keyGen.months.label     "ամս.">
+<!ENTITY enigmail.keyGen.years.label      "տ.">
+<!ENTITY enigmail.keyGen.noExpiry.label   "Բանալու գործման ժամկետը սահմանափակված չէ">
+<!ENTITY enigmail.keyGen.keySize.label    "Բանալու չափս">
+<!ENTITY enigmail.keyGen.console.label    "Բանալու ստեղծում">
+<!ENTITY enigmail.keyGen.keyType.label    "Բանալու տեսակ">
+<!ENTITY enigmail.keyGen.keyType.rsa      "RSA">
+<!ENTITY enigmail.keyGen.keyType.ecc      "ECC (էլիպսաձև կոր)">
+
+<!ENTITY enigmail.preferences.label       "Enigmail֊ի հարաչափեր">
+
+<!ENTITY enigmail.passwordSettings.label   "Գաղտնաբառի արտահայտության հիշման ժամանակահատված">
+<!ENTITY enigmail.expertUserMenus.label    "Ցուցադրել ընդլայնված հարաչափերը և ընտրացանկերը">
+<!ENTITY enigmail.expertUser.tooltip       "Սեղմեք ընտրացանկի բաժինները տեսնելու և փորձառու օգտատերերի հարաչափը բացելու համար։">
+<!ENTITY enigmail.basicUserMenus.label     "Թաքցնել ընդլայնված հարաչափերը և ընտրացանկերը">
+<!ENTITY enigmail.basicUser.tooltip        "Սեղմեք ընտրացանկի բաժինները թաքցնելու և փորձառու օգտատերերի հարաչափը փակելու համար։">
+
+<!ENTITY enigmail.prefs.pathsTitle.label      "Նիշեր և ցուցակներ">
+<!ENTITY enigmail.prefs.overrideGpg.label     "Ցուցադրել ուղին">
+<!ENTITY enigmail.prefs.overrideGpg.tooltip   "Սահմանել GnuPG֊ի դիրքը">
+
+
+<!ENTITY enigmail.agentAdditionalParam.label    "Լրացուցիչ հարաչափեր GnuPG֊ի համար">
+<!ENTITY enigmail.agentAdditionalParam.tooltip  "Սահմանել հարաչափեր, որոնք կօգտագործուեն GnuPG֊ի կողմից։">
+
+<!ENTITY enigmail.protectHeadersPrefs.label    "Լռելյայն գաղտնագրել թեման (միայն PGP/MIME֊ի համար)">
+<!ENTITY enigmail.protectHeadersPrefs.tooltip  "Ջնջել թեման և այլ կարևոր վերնագրեր գաղտնագրված հաղորդագրություններում։">
+
+
+<!ENTITY enigmail.mime_parts_on_demand.label  "Ներբեռնել կցվածքները միայն պահանջով (միայն IMAP֊ի համար)">
+
+
+<!ENTITY enigmail.maxIdleMinutesHead.label "Հիշել գաղտնաբառի արտահայտությունը որքան ժամանակ">
+<!ENTITY enigmail.maxIdleMinutesTail.label "անգործության րոպե (ինչից Հետո կարիք կլինի կրկին ներմուծել)">
+<!ENTITY enigmail.maxIdleMinutes.tooltip   "Հիշել գաղտնաբառի արտահայտությունը նշված ժամանակով։">
+
+<!ENTITY enigmail.resetPrefsButton.label "Զրոյացնել">
+<!ENTITY enigmail.resetPrefs.tooltip     "Բերել Enigmail֊ի հարաչափերը լռելյայնի։">
+
+<!ENTITY enigmail.backupPrefsButton.label "Արտածել հարաչափերը և բանալիները">
+<!ENTITY enigmail.backupPrefs.tooltip     "Պահել Enigmail֊ի հարաչափերը մեկ նիշում, ներառեալ Ձեր OpenPGP բանալիները։">
+
+<!ENTITY enigmail.restorePrefsButton.label "Վերականգնել հարաչափերը և բանալիները">
+<!ENTITY enigmail.restorePrefs.tooltip     "Վերականգնել նիշից Enigmail֊ի բոլոր հարաչափերը, Ձեր OpenPGP բանալիները ներառեալ։">
+
+<!ENTITY enigmail.pref.acSetupMessage.button "Սկսել ինքնագաղտնագրման կարգավորումը">
+
+<!ENTITY enigmail.pref.cryptoProvider.label  "">
+<!ENTITY enigmail.pref.openpgpjs.label       "">
+<!ENTITY enigmail.pref.gnupg.label           "">
+<!ENTITY enigmail.pref.restartRequired.label "">
+
+<!ENTITY enigmail.backupRestore.desc       "Արտածում (պահուստային պատճենում) և Enigmail֊ի կարգավորումների վերականգնում, ներառեալ բանալիները։">
+
+<!ENTITY enigmail.basic.label            "Հիմնական">
+<!ENTITY enigmail.sending.label          "Ուղարկում">
+<!ENTITY enigmail.keySel.label           "Բանալիների հարմարեցում">
+<!ENTITY enigmail.pgpMime.label          "PGP/MIME">
+<!ENTITY enigmail.advanced.label         "Լրացուցիչ">
+<!ENTITY enigmail.transferSettings.label "Տեղափոխման կարգավորումներ">
+
+<!ENTITY enigmail.basicPrefs.label       "">
+
+<!ENTITY enigmail.moreOptions.label       "Լրացուցիչ կարգավորումներ">
+<!ENTITY enigmail.general.okLabel         "ԼԱՎ">
+
+<!ENTITY enigmail.useNonDefaultComment.label "ավելացնել Enigmail֊ի մեկնաբանությունը OpenPGP֊ի ստորագրությունում">
+
+<!ENTITY enigmail.keyserver.label         "Բանալիների սպասարկիչ">
+<!ENTITY enigmail.keyserverDlg.label      "Բանալիների սպասարկչի ընտրություն">
+<!ENTITY enigmail.searchForKey.example    "օրինակ՝ «Անուն Ազգանուն &lt;օգտատեր@example.com&gt;»">
+<!ENTITY enigmail.searchForKey.desc1	    "«Անուն Ազգանուն» կցուցադրի բոլոր բանալիները, որոնք պարունակում են տողեր «Անուն» ԿԱՄ «Ազգանուն»">
+<!ENTITY enigmail.searchForKey.desc2      "«Անուն+Ազգանուն» կցուցադրի բոլոր բանալիները, որոնք պարունակում են «Անուն» և «Ազգանուն» տողեր">
+<!ENTITY enigmail.searchForKey.desc3      "«example.com» կցուցադրի բոլոր բանալիները, որոնք պարունակում են «example.com», օրինակ՝ «example@example.com»">
+<!ENTITY enigmail.searchForKey.label      "Որոնել բանալին">
+
+<!ENTITY enigmail.doubleDashSeparator.label "օգտագործել '--' որպես ստորագրության բաժանիչ">
+<!ENTITY enigmail.noHushMailSupport.label   "օգտագործել '&lt;' և  '&gt;' էլ փոստի հասցեների նշման համար">
+
+<!ENTITY enigmail.doubleDashSeparator.tooltip  "Տող '--'֊ը կը նշանակի ստորագրության տարածքի սկիզբը">
+<!ENTITY enigmail.noHushMailSupport.tooltip    "'&lt;' և '&gt;' կցուցադրեն էլ փոստերի հասցեները GnuPG֊ի համար։ Անջատեք, եթե հասցեները ունեն հին բանալիներ Hushmail ձևաչափով։">
+<!ENTITY enigmail.mime_parts_on_demand.tooltip "Անջատեք այդ կարգավորումը, եթե ստանում Եք հաղորդագրություններ  PGP/MIME ձևաչափով, IMAP ցուցակներում">
+<!ENTITY enigmail.disableSMIMEui.tooltip       "Ջնջել ստեղն S/MIME ֊ը նամակների կազմման պատուհանի գործիքների վահանակից">
+
+<!ENTITY enigmail.decryptbutton.label     "Վերծանել">
+<!ENTITY enigmail.decryptbutton.tip       "Վերծանել/ստուգել Enigmail֊ի օգնությանբ">
+
+<!ENTITY enigmail.doneButton.label        "Արված է">
+<!ENTITY enigmail.doneButton.accesskey    "О">
+
+<!ENTITY enigmail.messengermenu.accesskey "n">
+
+<!ENTITY enigmail.decryptverify.label    "Վերծանել/ստուգել">
+<!ENTITY enigmail.importpublickey.label  "Ներածել բաց բանալի">
+<!ENTITY enigmail.importKey.label        "Импортировать ключ">
+
+<!ENTITY enigmail.autoDecrypt.label      "Ինքաշխատորեն վերծանել/ստուգել նամակները">
+<!ENTITY enigmail.clearPassphrase.label  "Զրոյացնել գաղտնաբառի հիշված արտահայտությունը">
+<!ENTITY enigmail.editRules.label        "հասցեների կանոնների խմբագրիչ">
+
+<!ENTITY enigmail.decryptToFolder.label     "Վերծանել ցուցակի">
+<!ENTITY enigmail.decryptToFolder.accesskey "y">
+
+<!ENTITY enigmail.browseButton.label              "">
+
+<!-- "recent" label for Folder selection submenu -->
+<!ENTITY enigmail.recent.label              "Վերջինները">
+<!ENTITY enigmail.recent.accesskey          "J">
+
+<!ENTITY enigmail.prefs.label            "Ընտրանքներ">
+
+<!ENTITY enigmail.debugMenu.label        "Խմբագրման ընտրանքներ">
+<!ENTITY enigmail.viewconsole.label      "Դիտել հարթակը">
+<!ENTITY enigmail.viewlog.label          "Դիտել մատեան">
+
+<!ENTITY enigmail.generateKey.label        "Նոր բանալի">
+<!ENTITY enigmail.help.label               "Ուղղորդում">
+<!ENTITY enigmail.about.label              "Enigmail֊ի մասին">
+<!ENTITY enigmail.reload.label             "Վերագործարկել հաղորդագրությունը">
+<!ENTITY enigmail.browse.label             "">
+<!ENTITY enigmail.sendersKeyMenu.label     "Ուղարկողի բանալի">
+<!ENTITY enigmail.adminSmartCard.label     "">
+<!ENTITY enigmail.setupWiz.label           "Տեղակայման խորհրդատու">
+
+<!ENTITY enigmail.decryptverify.accesskey   "G">
+<!ENTITY enigmail.importpublickey.accesskey "B">
+<!ENTITY enigmail.reload.accesskey          "c">
+<!ENTITY enigmail.adminSmartCard.accesskey  "E">
+
+<!ENTITY enigmail.autoDecrypt.accesskey     "d">
+<!ENTITY enigmail.debugMenu.accesskey       "g">
+
+<!ENTITY enigmail.clearPassphrase.accesskey "J">
+<!ENTITY enigmail.editRules.accesskey       "J">
+<!ENTITY enigmail.setupWiz.accesskey        "c">
+
+
+<!ENTITY enigmail.prefs.accesskey           "g">
+<!ENTITY enigmail.viewconsole.accesskey     "G">
+<!ENTITY enigmail.viewlog.accesskey         "g">
+
+<!ENTITY enigmail.help.accesskey            "К">
+<!ENTITY enigmail.about.accesskey           "J">
+<!ENTITY enigmail.sendersKeyMenu.accesskey  "С">
+
+<!ENTITY enigmail.composetoolbar.desc         "Տեղեկություն Enigmail֊ի գաղտնագրության մասին">
+
+<!ENTITY enigmail.signedsend.label            "Ստորագրել նամակը">
+<!ENTITY enigmail.encryptedsend.label         "Գաղտնագրել նամակը">
+
+<!ENTITY enigmail.pgpAccountSettings.label     "">
+<!ENTITY enigmail.sendOptionsMenu.label        "">
+<!ENTITY enigmail.defaultKeySelOpts.label      "">
+<!ENTITY enigmail.usePgpMime.label             "Հաղորդակարգ՝ PGP/MIME">
+<!ENTITY enigmail.useSmime.label               "Հաղորդակարգ՝ S/MIME">
+
+<!ENTITY enigmail.tempTrustAllKeys.label       "Վստահել բոլոր հասցեների բանալիներին">
+<!ENTITY enigmail.undoencryption.label         "Չեղարկել գաղտնագրումը">
+<!ENTITY enigmail.attachkey.label              "">
+<!ENTITY enigmail.attachmykey.label            "Ներդնել իմ բաց բանալին">
+<!ENTITY enigmail.attachmykey.short.label      "">
+<!ENTITY enigmail.protectHeaders.label         "Պաշտպանել թեման">
+<!ENTITY enigmail.encryptDraft.label           "">
+
+<!ENTITY enigmail.composemenu.accesskey        "n">
+
+<!ENTITY enigmail.signedsend.accesskey         "c">
+<!ENTITY enigmail.signedsend.key               "c">
+<!ENTITY enigmail.encryptedsend.accesskey      "c">
+<!ENTITY enigmail.encryptedsend.key            "c">
+
+<!ENTITY enigmail.sendOptionsMenu.accesskey    "c">
+<!ENTITY enigmail.defaultKeySelOpts.accesskey  "С">
+<!ENTITY enigmail.pgpAccountSettings.accesskey "c">
+<!ENTITY enigmail.usePgpMime.accesskey         "U">
+<!ENTITY enigmail.useSmime.accesskey           "c">
+<!ENTITY enigmail.encryptDraft.accesskey       "G">
+
+<!ENTITY enigmail.tempTrustAllKeys.accesskey   "L">
+<!ENTITY enigmail.undoencryption.accesskey     "U">
+<!ENTITY enigmail.attachkey.accesskey          "d">
+<!ENTITY enigmail.attachmykey.accesskey        "E">
+<!ENTITY enigmail.protectHeaders.accesskey     "l">
+
+
+<!-- account specific options -->
+<!ENTITY enigmail.defaultSigning.label            "Ստորագրել նամակները լռելյայն">
+<!ENTITY enigmail.defaultSigning.accesskey        "U">
+<!ENTITY enigmail.defaultEncryption.label         "Գաղտնագրել նամակները լռելյայն">
+<!ENTITY enigmail.defaultEncryption.accesskey     "c">
+
+<!ENTITY enigmail.afterDefaultsAndRules.label     "Լռելյայն կանոնների կիրառումից Հետո`">
+<!ENTITY enigmail.finallySignEncrypted.label      "ստորագրել գաղտնագրված նամակները">
+<!ENTITY enigmail.finallySignEncrypted.accesskey  "E">
+<!ENTITY enigmail.finallySignNotEncrypted.label   "ստորագրել չգաղտնագրված նամակները">
+<!ENTITY enigmail.finallySignNotEncrypted.accesskey "N">
+
+<!ENTITY enigmail.autoEncryptDrafts.label         "Шифровать черновики при сохранении">
+<!ENTITY enigmail.autoEncryptDrafts.accesskey     "G">
+
+<!ENTITY enigmail.advancedPrefsButton.label       "">
+<!ENTITY enigmail.openpgpPrefsButton.label        "">
+<!ENTITY enigmail.openpgpPrefsButton.accesskey    "J">
+
+
+<!-- Sending Preferences -->
+
+<!ENTITY enigmail.SendingPrefs.label              "Ուղարկման ընդհանուր ընտրանքներ">
+<!ENTITY enigmail.seeAccountSettings.label        "Դիտ․ նաև Enigmail֊ում անձնական էջի առանձին ընտրանքները (Անձնական էջի ընտրանքներ -&gt; OpenPGP պաշտպանություն)">
+
+<!ENTITY enigmail.encryptionModelConvenient.label "օգտագործել գաղտնագրման ընտրանքները լռելյայն">
+<!ENTITY enigmail.encryptionModelManually.label   "Կարգավորել գաղտնագրումը ձեռքով">
+
+<!ENTITY enigmail.keepCryptoSettingsForReply.label   "Գաղտնագրել/ստորագրել պատասխանները գաղտնագրված/ստորագրված նամակների համար">
+<!ENTITY enigmail.keepCryptoSettingsForReply.tooltip "Ըսն հնարավորության գաղտնագրել/ստորագրել պատասխանները գաղտնագրված/ստորագրված նամակների համար">
+
+<!ENTITY enigmail.autoSendEncryptedOption.label   "Ուղարկվող նամակների ինքնագաղտնագրում">
+<!ENTITY enigmail.autoSendEncryptedNever.label    "Երբեք">
+<!ENTITY enigmail.autoSendEncryptedNever.tooltip  "Չգաղտնագրել նամակները ինքնուրույն, եթե հասցեատիրոջ կանոնները չեն պահանջում։">
+<!ENTITY enigmail.autoSendEncryptedIfKeys.label   "Եթե հնարավոր է">
+<!ENTITY enigmail.autoSendEncryptedIfKeys.tooltip "Ինքնագաղտնագրել նամակները, եթե ամեն ստացողի համար կայ առնվազն մեկ բանալի, որը նշված է որպես վստահված (դիտ վերև), և ոչ մի ստացողի համար չկայ գաղտնագրումը արգելող կանոն։">
+
+<!ENTITY enigmail.acceptedKeysOption.label        "օգտագործել գաղտնագրման համար">
+<!ENTITY enigmail.acceptedKeysTrusted.label       "Միայն վստահված բանալիներ">
+<!ENTITY enigmail.acceptedKeysTrusted.tooltip     "օգտագործել միայն այն բանալիները, որոնք ստորագրել Եք Դուք կամ Ձեր կողմից վստահված անձինք։ Այլ կերպ ասած, օգտագործել միայն այն բանալիները, որոնք «համապատասխանում են» գաղտնագրման համար։">
+<!ENTITY enigmail.acceptedKeysAllUsable.label     "Բոլոր օգտագործվող բանալիները">
+<!ENTITY enigmail.acceptedKeysAllUsable.tooltip   "օգտագործել բոլոր բանալիները, բացի Ձեր կողմից անջատած կամ ժամկետանց/հետ կանչված տիրոջ կողմից։  Տեխնիկորեն օգտագործվում է ընտրանք GPG֊ն «--trust-model-always»։">
+
+<!ENTITY enigmail.confirmBeforeSendingOption.label           "Ուղարկելուց առաջ խնդրել վավերացում">
+<!ENTITY enigmail.confirmBeforeSendingNever.label            "Երբեք">
+<!ENTITY enigmail.confirmBeforeSendingNever.tooltip          "Ուղարկումից առաջ չցուցադրել պատուհան ստորագրության/ գաղտնագրման մասին տեղեկութեամբ">
+<!ENTITY enigmail.confirmBeforeSendingAlways.label           "Միշտ">
+<!ENTITY enigmail.confirmBeforeSendingAlways.tooltip         "Ուղարկումից առաջ ցուցադրել պատուհան ստորագրության/ գաղտնագրման մասին տեղեկութեամբ">
+<!ENTITY enigmail.confirmBeforeSendingIfEncrypted.label      "գաղտնագրված նամակ ուղարկելիս">
+<!ENTITY enigmail.confirmBeforeSendingIfEncrypted.tooltip    "գաղտնԱգրվաԾ նամակը ուղարկելուց առաջ ցուցադրել պատուհան ստորագրության/ գաղտնագրման մասին տեղեկութեամբ">
+<!ENTITY enigmail.confirmBeforeSendingIfNotEncrypted.label   "Չգաղտնագրված նամակ ուղարկելիս">
+<!ENTITY enigmail.confirmBeforeSendingIfNotEncrypted.tooltip "Չգաղտնագրված նամակը ուղարկելուց առաջ ցուցադրել պատուհան ստորագրության/ գաղտնագրման մասին տեղեկութեամբ">
+<!ENTITY enigmail.confirmBeforeSendingIfRules.label          "Եթե գաղտնագրման ընտրանքները լռելյայն վերասահմանված է կանոններով">
+<!ENTITY enigmail.confirmBeforeSendingIfRules.tooltip        "Ցուցադրել ստորագրման/գաղտնագրման մասին տեղեկությունը ուղարկելուց առաջ, եթե գաղտնագրման ընտրանքները վերասահմանված չեն ամեն ստացողի համար անհատական կանոններով կամ ինքնագաղտնագրմամբ">
+
+
+<!-- keySel Preferences -->
+
+<!ENTITY enigmail.recipientsSelectionOption.label "Ինչպէ՞ս ընտրել բանալիներ։">
+<!ENTITY enigmail.assignKeysByRules.label             "Ստացողների կանոններին համաձայն">
+<!ENTITY enigmail.assignKeysByRules.tooltip           "Ընտրել բանալիները հասցեատէրերի անհատական կանոններին համաձայն։ Եթե ընտրված է միայն այդ ընտրանքը, կկանչուի կանոնների խմբագրիչը։">
+<!ENTITY enigmail.assignKeysByEmailAddr.label         "Բանակիների կառավարչում ըստ էլ․ փոստի">
+<!ENTITY enigmail.assignKeysByEmailAddr.tooltip       "Ընտրել բանալիները համապատասխանեցնելով բանալիների կառավարչում գտնվող էլ․ փոստի հետ։">
+<!ENTITY enigmail.assignKeysManuallyIfMissing.label   "Ընտրել պակաս բանալիները ձեռքով">
+<!ENTITY enigmail.assignKeysManuallyIfMissing.tooltip "Բացել ձեռքով բանալիների ընտրությունը, եթե բանալիները գտնված չեն։">
+<!ENTITY enigmail.assignKeysManuallyAlways.label      "Միշտ ընտրել բանալիները ձեռքով">
+<!ENTITY enigmail.assignKeysManuallyAlways.tooltip    "Միշտ կանչել բանալիների ձեռքով ընտրության պատուհանը։">
+<!ENTITY enigmail.defineRules.label               "">
+
+<!ENTITY enigmail.keyservers.label                "">
+<!ENTITY enigmail.keyservers.sample2              "">
+<!ENTITY enigmail.autoKeyServerSelection.label    "">
+<!ENTITY enigmail.autoKeyRetrieve.label           "">
+<!ENTITY enigmail.resetRememberedValues.label     "Ցուցադրել զգուշացումները">
+<!ENTITY enigmail.resetRememberedValues.tooltip   "Կրկին ցուցադրել բոլոր հարցերի և զգուշացումների պատուհանները, որոք մինչ այդ թաքցրել էիք։">
+
+<!ENTITY enigmail.keygen.desc "&lt;a class='enigmailStrong'&gt;ԾԱՆՈԹԱԳՐՈՒթյուն․ բանալիների ստեղծումը կարող է տևել մի քանի րոպե։ &lt;/a&gt; Մի փակեք ծրագիրը այդ գործընթացի ժամանակ։  Արմատական  գործողությունների ժամանակ համացանցում կամ  սարքում, բանալիների ստեղծման ժամանակ լրանում են 'պատահականության պաշարները' և գործընթացը արագանում է։
+Ձեզ կը տեղեկացնեն ավարտի մասին։">
+
+<!ENTITY enigmail.userSelectionList.label           "Enigmail֊ի բանալու ընտրություն">
+<!ENTITY enigmail.usersNotFound.label               "հասցեատէրերը սխալ են, գտնված չեն կամ վստահված չեն">
+<!ENTITY enigmail.keyExpiry.label                   "Գործման ժամկետ">
+<!ENTITY enigmail.uidValidity.label                 "վավերական">
+<!ENTITY enigmail.keySelection.label                "Ընտրություն">
+<!ENTITY enigmail.keyId.label                       "Բանալու նույնարկիչ">
+<!ENTITY enigmail.userSelSendSigned.label           "">
+<!ENTITY enigmail.userSelSendSigned.accesskey       "G">
+<!ENTITY enigmail.userSelSendEncrypted.label        "">
+<!ENTITY enigmail.userSelSendEncrypted.accesskey    "I">
+<!ENTITY enigmail.displayNoLonger.label             "Եթե գաղտնագրումը անհնար է՝ չցուցադրել այս պատուհանը">
+<!ENTITY enigmail.importMissingKeys.label           "Խնդրել պակասող բանալիները">
+<!ENTITY enigmail.importMissingKeys.accesskey       "P">
+<!ENTITY enigmail.importMissingKeys.tooltip         "Փորձել ներածել պակասող բանալիները բանալիների սպասարկչից">
+<!ENTITY enigmail.refreshKeys.label                 "Թարմեցնել բանալիների ցուցակը">
+<!ENTITY enigmail.refreshKeys.accesskey             "J">
+<!ENTITY enigmail.send.label                        "Ուղարկել">
+<!ENTITY enigmail.send.accesskey                    "N">
+<!ENTITY enigmail.perRecipientsOption.label         "Ստեղծել կանոններ հասցեատիրոջ համար">
+<!ENTITY enigmail.perRecipientsOption.accesskey     "P">
+
+<!ENTITY enigmail.ctxDecryptOpen.label              "Վերծանել և բացել">
+<!ENTITY enigmail.ctxDecryptSave.label              "">
+<!ENTITY enigmail.ctxImportKey.label                "OpenPGP բանալու ներածում">
+<!ENTITY enigmail.ctxVerifyAtt.label                "Ստուգել ստորագրությունը">
+<!ENTITY enigmail.ctxDecryptOpen.accesskey          "G">
+<!ENTITY enigmail.ctxDecryptSave.accesskey          "P">
+<!ENTITY enigmail.ctxImportKey.accesskey            "B">
+<!ENTITY enigmail.ctxVerifyAtt.accesskey            "D">
+<!ENTITY enigmail.detailsHdrButton.label            "Մանրամասներ">
+<!ENTITY enigmail.revealAttachmentsButton.label     "Կցված նիշերի անունները թաքցված են։
+Սեղմեք «Ցուցադրել», նիշերի սկզբնական անունները ստանալու համար։">
+<!ENTITY enigmail.revealAttachments.button          "Ցուցադրել">
+
+<!ENTITY enigmail.exchangeGarbage.desc              "Այս նամակը վնասված է
+PGP/MIME ֊ը MS-Exchange֊ից։ Եթե ներդրոնները չեն բացվում կամ կան պատասխանի և փոխանցման հետ խնդիրներ, սեղմեք  «Շտկել խնդիրները»։">
+<!ENTITY enigmail.exchangeGarbage.fixButton.label   "Շտկել խնդիրները">
+<!ENTITY enigmail.exchangeGarbage.waitMessage       "">
+
+<!ENTITY enigmail.amPrefTitle.label                 "">
+<!ENTITY enigmail.amPrefDesc.label                  "Enigmail-ը ապահովում է նամակների գաղտնագրում և ստորագրում OpenPGP հաղորդակարգով։ Աշխատանքի համար պիտի տեղակայված լինի GnuPG (gpg)։">
+<!ENTITY enigmail.amPrefEnablePgp.label             "Միացնել OpenPGP (Enigmail)֊ի ապահովումը այդ անձի համար">
+<!ENTITY enigmail.amPrefEnablePgp.accesskey         "l">
+<!ENTITY enigmail.amPrefUseFromAddr.label           "օգտագործել այդ անձի հասցեն բանալու նույնացման համար">
+<!ENTITY enigmail.amPrefUseFromAddr.accesskey       "d">
+<!ENTITY enigmail.amPrefUseKeyId.label              "օգտագործել նշված բանալու նույնարկիչը․">
+<!ENTITY enigmail.amPrefUseKeyId.accesskey          "U">
+<!ENTITY enigmail.amPrefSelectKey.label             "Ընտրել բանալին">
+<!ENTITY enigmail.amPrefSelectKey.accesskey         "c">
+<!ENTITY enigmail.amPrefMsgComp.label               "Նամակի կազմում">
+<!ENTITY enigmail.amPrefMsgComp.accesskey           "P">
+<!ENTITY enigmail.amPrefDefaultEncrypt.label        "Սկզբնական ընտրանքներ նամակ կազմելու համար">
+<!ENTITY enigmail.amPrefAutocrypt.label             "Ինքնագաղտնագրում">
+<!ENTITY enigmail.amPrefAutocrypt.accesskey         "">
+<!ENTITY enigmail.encryptionDlg.label               "գաղտնագրման և թվային Enigmail ստորագրությունների ընտրանքներ">
+<!ENTITY enigmail.encDlgProtocol.label              "Ստորագրման֊գաղտնագրման հիմք">
+<!ENTITY enigmail.encDlgEncrypt.label               "Գաղտնագրել նամակը">
+<!ENTITY enigmail.encDlgEncrypt.accesskey           "c">
+<!ENTITY enigmail.encDlgSign.label                  "Ստորագրել նամակը">
+<!ENTITY enigmail.encDlgSign.accesskey              "c">
+<!ENTITY enigmail.encDlgPgpMime.label               "Կիրառել PGP/MIME">
+<!ENTITY enigmail.encDlgPgpMime.accesskey           "g">
+<!ENTITY enigmail.encDlgInlinePgp.label             "Կիրառել PGP գրույթում">
+<!ENTITY enigmail.encDlgInlinePgp.accesskey         "B">
+<!ENTITY enigmail.encDlgSMime.label                 "Կիրառել S/MIME">
+<!ENTITY enigmail.encDlgSMime.accesskey             "E">
+<!ENTITY enigmail.encDlgReset.label                 "Բերել սկզբնական վիճակի">
+<!ENTITY enigmail.encDlgReset.accesskey             "J">
+<!ENTITY enigmail.amPrefMimePreferProto.label       "Եթե հնարավոր է գաղտնագրում և Enigmail, և S/MIME, ապա՝">
+<!ENTITY enigmail.amPrefMimePreferEnigmail.label    "Նախընտրել Enigmail (OpenPGP)">
+<!ENTITY enigmail.amPrefMimePreferEnigmail.accesskey "g">
+<!ENTITY enigmail.amPrefMimePreferSMime.label       "Նախընտրել S/MIME">
+<!ENTITY enigmail.amPrefMimePreferSMime.accesskey   "B">
+
+<!ENTITY enigmail.progressText.label               "Կատարում՝">
+
+<!ENTITY enigmail.openPgpSecurity.label            "OpenPGP պաշտպանություն">
+
+<!ENTITY enigmail.pgpSecurityInfo.label            "">
+<!ENTITY enigmail.copySecurityInfo.label           "պատճենել Enigmail տեղեկությունները պաշտպանության մասին">
+<!ENTITY enigmail.showPhoto.label                  "Ցուցադրել պատկերանույնարկիչը">
+<!ENTITY enigmail.photoViewer.title                "Դիտել բանալում գտնվող պատկերները">
+<!ENTITY enigmail.displayKeyProperties.label       "Բանալու յատկությունները">
+<!ENTITY enigmail.signSenderKey.label              "">
+<!ENTITY enigmail.trustSenderKey.label             "">
+<!ENTITY enigmail.signSenderKeyPopup.label         "">
+<!ENTITY enigmail.trustSenderKeyPopup.label        "">
+<!ENTITY enigmail.createRuleFromAddr.label         "">
+<!ENTITY enigmail.keyManWindow.label               "Բանալիների կառավարիչ">
+<!ENTITY enigmail.keyManWindow.accesskey           "y">
+
+<!ENTITY enigmail.singleRcptSettings.label          "Enigmail - հասցեների կարգավորումներ">
+
+<!ENTITY enigmail.selKeysButton.label               "">
+<!ENTITY enigmail.action.label                      "Գործողություն">
+<!ENTITY enigmail.nextRule.label                    "Շարունակել հաջորդ կանոնից եկած հասցեի համար">
+<!ENTITY enigmail.nextAddress.label                 "Չստուգել հետագա կանոնները եկած հասցեի համար">
+<!ENTITY enigmail.useKeys.label                     "օգտագործել հաջորդ բանալիները՝">
+<!ENTITY enigmail.selKeysButton.accesskey           "c">
+<!ENTITY enigmail.setDefaultsFor.label              "">
+<!ENTITY enigmail.encryption.label                  "գաղտնագրում">
+<!ENTITY enigmail.signing.label                     "Ստորագրություն">
+<!ENTITY enigmail.never.label                       "Երբեք">
+<!ENTITY enigmail.always.label                      "Միշտ">
+<!ENTITY enigmail.maybe.label                       "Այո, եթե այդ ընտրված է նամակի կազմման ժամանակ">
+<!ENTITY enigmail.singleRcptSettings.desc           "(Ծանոթագրություն․ հակասությունների դեպքում կետ «Երբեք» ֊ը չեղարկում է «Միշտ» կետի գործունեությունը)">
+<!ENTITY enigmail.ruleEmail.label                   "Սահմանել Enigmail կանոններ հասցեատիրոջ համար">
+<!ENTITY enigmail.ruleEmail.tooltip                 "Ցուցադրել միայն հասցեները, ՈՉ հասցեատէրերի անունները։
+\nНапр., գրառում «Որևէ անուն &lt;some.name@address.net&gt;» սխալ է։">
+<!ENTITY enigmail.sepratationDesc.label             "(հասցեները բաժանվում են բացատումներով)">
+<!ENTITY enigmail.matchDescStart.label              "Կիրառել կանոնը, եթե հասցեատէրը">
+<!ENTITY enigmail.matchDescEnd.label                "վերին նշվածներից մեկն է">
+<!ENTITY enigmail.matchExact.label                  "Իրենից ներկայացնում է">
+<!ENTITY enigmail.matchContains.label               "պարունակում է">
+<!ENTITY enigmail.matchBegin.label                  "սկսվում է">
+<!ENTITY enigmail.matchEnd.label                    "վերջանում է">
+<!ENTITY enigmail.not.label                         "Ոչ">
+
+<!ENTITY enigmail.rulesEditor.label                 "Enigmail - հասցեների կանոնների խմբագրիչ">
+<!ENTITY enigmail.email.label                       "Էլ․ փոստի հասցե">
+<!ENTITY enigmail.pgpKeys.label                     "Բանալիներ">
+<!ENTITY enigmail.sign.label                        "Ստորագրություն">
+<!ENTITY enigmail.encrypt.label                     "Գաղտնագրում">
+<!ENTITY enigmail.edit.label                        "Ուղղում">
+<!ENTITY enigmail.edit.accesskey                    "E">
+<!ENTITY enigmail.add.label                         "ավելացնել">
+<!ENTITY enigmail.add.accesskey                     "d">
+<!ENTITY enigmail.delete.label                      "Ջնջել">
+<!ENTITY enigmail.delete.accesskey                  "c">
+<!ENTITY enigmail.moveUp.label                      "Վերև">
+<!ENTITY enigmail.moveUp.accesskey                  "U">
+<!ENTITY enigmail.moveDown.label                    "Ներքև">
+<!ENTITY enigmail.moveDown.accesskey                "G">
+<!ENTITY enigmail.searchRule.label                  "Ցուցադրել կանոններ հասցեներով, որոնք պարունակում են․">
+<!ENTITY enigmail.rules.displayAutocrypt.label      "">
+<!ENTITY enigmail.rules.displayAutocrypt.accesskey  "c">
+<!ENTITY enigmail.clearSearch.label                 "Մաքրել">
+<!ENTITY enigmail.clearSearch.accesskey             "P">
+
+<!ENTITY enigmail.searchKeyDlg.label               "Ստանակ բանալիները">
+<!ENTITY enigmail.searchKeyDlgCapt.label           "Գտնված են բանալիներ, ընտրեք ինչ ներածել">
+<!ENTITY enigmail.searchKeyDlgSelAll.label         "Ընտրել ամենը/ոչինչ">
+
+<!ENTITY enigmail.created.label                    "Ստեղծված">
+
+<!ENTITY enigmail.progress.label                   "Կատարում">
+
+<!ENTITY enigmail.sKeyDlg.title                    "Enigmail - ստորագրել բանալին">
+<!ENTITY enigmail.sKeyDlg.signKey.label            "Բանալին ստորագրվում է․">
+<!ENTITY enigmail.sKeyDlg.fingerprint.label        "Մատնահետք:">
+<!ENTITY enigmail.sKeyDlg.signWithKey.label        "Ստորագրել բանալիով․">
+<!ENTITY enigmail.sKeyDlg.signUids.label           "">
+<!ENTITY enigmail.sKeyDlg.ownKeyTrust.label        "Ծանոթագրություն․ այս ցուցակում արտածման համար պետք է Ձեր բանալիների տէրերի համար սահմանել  վստահության բացարձակ մակարդակ։">
+
+<!ENTITY enigmail.addUidDlg.title                  "Enigmail - ավելացնել օգտատիրոջ նույնացուցիչ">
+<!ENTITY enigmail.addUidDlg.name.label             "Անուն">
+<!ENTITY enigmail.addUidDlg.email.label            "Էլ․ փոստի հասցե">
+
+<!ENTITY enigmail.keyTrust.title                   "Enigmail - Սահմանել վստահության մակարդակ բանալու տիրոջ համար">
+<!ENTITY enigmail.keyTrust.trustKey.label          "Վստահել բանալուն․">
+<!ENTITY enigmail.keyTrust.trustLevel.label        "Որքանով Եք վստահ, որ բանալու տէրը ճիշտ է ստորագրում այլ բանալիները։">
+<!ENTITY enigmail.keyTrust.dontKnow.label          "Անյայտ (դեռ նշված չէ)">
+<!ENTITY enigmail.keyTrust.noTrust.label           "Չվստահել (բանալիների ստորագրությունը չի վստահվում)">
+<!ENTITY enigmail.keyTrust.marginalTrust.label     "նվազագույն վստահություն (կայ որոշ վստահություն)">
+<!ENTITY enigmail.keyTrust.fullTrust.label         "Լիովին վստահել (լիովին վստահել բանալիների ստորագրությանը)">
+<!ENTITY enigmail.keyTrust.ultimateTrust.label     "Բացարձակ վստահություն (կիրառվում է միայն Ձեր բանալիների դեպքում)">
+
+<!ENTITY enigmail.keyExpiry.title                   "Enigmail - բանալիների գործման ժամկետի փոփոխություն">
+<!ENTITY enigmail.keyExpiry.expiryKey.label         "Սահմանել գործման նոր ժամկետ բանալիների համար․">
+
+<!ENTITY enigmail.keyMan.title                     "Enigmail բանալիների կառավարում">
+<!ENTITY enigmail.keyMan.close.label               "Փակել պատուհանը">
+<!ENTITY enigmail.keyMan.generate.label            "Նոր բանալիների զույգ">
+<!ENTITY enigmail.keyMan.sign.label                "Ստորագրել բանալին">
+<!ENTITY enigmail.keyMan.setTrust.label            "Սահմանել վստահության մակարդակ բանալու տիրոջ համար">
+<!ENTITY enigmail.keyMan.genRevoke.label           "Մեկնաբանության վկայագիր">
+<!ENTITY enigmail.keyMan.ctxGenRevoke.label        "Ստեղծել և պահել մեկնաբանության վկայագիր">
+
+<!ENTITY enigmail.keyMan.fileMenu.label            "Նիշ">
+<!ENTITY enigmail.keyMan.editMenu.label            "Ուղղում">
+<!ENTITY enigmail.keyMan.viewMenu.label            "Տեսք">
+<!ENTITY enigmail.keyMan.keyserverMenu.label       "Բանալիների սպասարկիչ">
+<!ENTITY enigmail.keyMan.generateMenu.label        "Ստեղծել">
+
+<!ENTITY enigmail.keyMan.fileMenu.accesskey        "A">
+<!ENTITY enigmail.keyMan.editMenu.accesskey        "c">
+<!ENTITY enigmail.keyMan.viewMenu.accesskey        "D">
+<!ENTITY enigmail.keyMan.keyserverMenu.accesskey   "С">
+<!ENTITY enigmail.keyMan.generateMenu.accesskey    "U">
+
+<!ENTITY enigmail.keyMan.importFromFile.label      "Ներածել բանալիները նիշից">
+<!ENTITY enigmail.keyMan.importFromServer.label    "Փնտրել բանալիներ">
+<!ENTITY enigmail.keyMan.importFromClipbrd.label   "Ներածել բանալիները սեղմատախտակից">
+<!ENTITY enigmail.keyMan.importFromUrl.label       "Ներածել բանալիները URL֊ով">
+<!ENTITY enigmail.keyMan.exportToFile.label        "Արտածել բանալիները նիշում">
+<!ENTITY enigmail.keyMan.sendKeys.label            "Ուղարկել բաց բանալիները էլ․ փոստով">
+<!ENTITY enigmail.keyMan.createMail.label          "Կազմել նամակ ընտրված բանալիներով">
+<!ENTITY enigmail.keyMan.uploadToServer.label      "Հրապարակել բաց բանալիները">
+<!ENTITY enigmail.keyMan.uploadToWkd.label         "Տեղակայել Ձեր գործարկուի ցանցային ցուցակում">
+<!ENTITY enigmail.keyMan.copyToClipbrd.label       "պատճենել բաց բանալիները սեղմատախտակում">
+<!ENTITY enigmail.keyMan.ctxExportToFile.label     "Արտածել բանալիները նիշում">
+<!ENTITY enigmail.keyMan.ctxUploadToServer.label   "Տեղակայել բաց բանալիները բանալիների սպասակչում">
+<!ENTITY enigmail.keyMan.ctxCopyToClipbrd.label    "պատճենել բաց բանալիները սեղմատախտակում">
+<!ENTITY enigmail.keyMan.refreshSelKeys.label      "Թարմեցնել ընտրված բաց բանալիները">
+<!ENTITY enigmail.keyMan.refreshAllKeys.label      "Թարմեցնել բոլոր բաց բանալիները">
+<!ENTITY enigmail.keyMan.downloadContactKeys.label "Գտնել բանալիներ բոլոր թղթակիցների համար">
+<!ENTITY enigmail.keyMan.ctxRefreshKey.label       "Թարմեցնել բաց բանալիները բանալիների սպասարկչից">
+<!ENTITY enigmail.keyMan.initiateAcBackup.label    "Ստեղծել ինքնագաղտնագտրման կարգավորումների նամակ">
+
+<!ENTITY enigmail.keyMan.reload.label              "Վերագործարկել բանալիների  պահնակում">
+<!ENTITY enigmail.keyMan.addPhoto.label            "ավելացնել լուսանկար">
+<!ENTITY enigmail.keyMan.manageUid.label           "օգտատիրոջ նույնարկիչների կառավարում">
+<!ENTITY enigmail.keyMan.changeExpiry.label        "Փոփոխել բանալիների գործման ժամկետը">
+<!ENTITY enigmail.keyMan.changePwd.label           "Փոխել գաղտնաբառի արտահայտությունը">
+<!ENTITY enigmail.keyMan.delKey.label              "Ջնջել բանալին">
+<!ENTITY enigmail.keyMan.revokeKey.label           "Հետ կանչել բանալին">
+<!ENTITY enigmail.keyMan.keyProps.label            "Բանալու յատկություններ">
+<!ENTITY enigmail.keyMan.showAllKeys.label         "Լռելյայն ցուցադրել բոլոր բանալիները">
+<!ENTITY enigmail.keyMan.viewPhoto.label           "Պատկերանույնարկիչ">
+<!ENTITY enigmail.keyMan.ctxViewPhoto.label        "Ցուցադրել պատկերանույնարկիչը">
+<!ENTITY enigmail.keyMan.showInvalidKeys.label     "Ցուցադրել անվավերբանալիները">
+<!ENTITY enigmail.keyMan.showUntrustedKeys.label   "Ցուցադրել անվստահելի բանալիները">
+<!ENTITY enigmail.keyMan.showOthersKeys.label      "Ցուցադրել այլ մարդկանց բանալիները">
+<!ENTITY enigmail.keyMan.userId.label              "Անուն">
+<!ENTITY enigmail.keyMan.keyType.label             "Տեսակ">
+<!ENTITY enigmail.keyMan.calcTrust.label           "Բանալուի վավերացում">
+<!ENTITY enigmail.keyMan.ownerTrust.label          "Վստահություն բանալու տիրոջը">
+<!ENTITY enigmail.keyMan.fingerprint.label         "Հետք">
+<!ENTITY enigmail.keyMan.selectAll.label           "Ընտրել բոլոր բանալիները">
+<!ENTITY enigmail.keyMan.addToPRRule.label         "ավելացնել հասցեատիրոջ կանոններում">
+<!ENTITY enigmail.keyMan.emptyTree.tooltip         "Ներմուծեք վերուվում որոնման հարցը">
+<!ENTITY enigmail.keyMan.nothingFound.tooltip      "Ձեր որոնմանը չի համապատասխանում ոչ մի բանալի">
+<!ENTITY enigmail.keyMan.pleaseWait.tooltip        "">
+
+<!ENTITY enigmail.keyMan.filter.label              "Որոնել․">
+<!ENTITY enigmail.keyMan.filter.accesskey          "c">
+
+<!ENTITY enigmail.keyMan.close.accesskey             "P">
+<!ENTITY enigmail.keyMan.generate.accesskey          "С">
+<!ENTITY enigmail.keyMan.sign.accesskey              "c">
+<!ENTITY enigmail.keyMan.setTrust.accesskey          "L">
+<!ENTITY enigmail.keyMan.genRevoke.accesskey         "J">
+<!ENTITY enigmail.keyMan.delKey.accesskey            "G">
+<!ENTITY enigmail.keyMan.revokeKey.accesskey         "J">
+<!ENTITY enigmail.keyMan.importFromFile.accesskey    "B">
+<!ENTITY enigmail.keyMan.exportToFile.accesskey      "c">
+<!ENTITY enigmail.keyMan.importFromServer.accesskey  "c">
+<!ENTITY enigmail.keyMan.uploadToServer.accesskey    "U">
+<!ENTITY enigmail.keyMan.reload.accesskey            "J">
+<!ENTITY enigmail.keyMan.addPhoto.accesskey          "g">
+<!ENTITY enigmail.keyMan.manageUid.accesskey         "E">
+<!ENTITY enigmail.keyMan.changeExpiry.accesskey      "c">
+<!ENTITY enigmail.keyMan.changePwd.accesskey         "g">
+<!ENTITY enigmail.keyMan.showInvalidKeys.accesskey   "G">
+<!ENTITY enigmail.keyMan.showUntrustedKeys.accesskey "U">
+<!ENTITY enigmail.keyMan.showOthersKeys.accesskey    "l">
+<!ENTITY enigmail.keyMan.showPhoto.accesskey         "g">
+<!ENTITY enigmail.keyMan.importFromClipbrd.accesskey "B">
+<!ENTITY enigmail.keyMan.importFromUrl.accesskey     "U">
+<!ENTITY enigmail.keyMan.copyToClipbrd.accesskey     "P">
+<!ENTITY enigmail.keyMan.keyDetails.accesskey        "С">
+<!ENTITY enigmail.keyMan.showAllKeys.accesskey       "G">
+<!ENTITY enigmail.keyMan.enableKey.accesskey         "r">
+<!ENTITY enigmail.keyMan.refreshSelKeys.accesskey    "J">
+<!ENTITY enigmail.keyMan.refreshAllKeys.accesskey    "d">
+<!ENTITY enigmail.keyMan.selectAll.accesskey         "d">
+<!ENTITY enigmail.keyMan.sendKeys.accesskey          "c">
+<!ENTITY enigmail.keyMan.createMail.accesskey        "P">
+<!ENTITY enigmail.keyMan.downloadContactKeys.accesskey "A">
+<!ENTITY enigmail.keyMan.initiateAcBackup.accesskey  "d">
+
+
+<!ENTITY enigmail.keyMan.selectAll.key               "d">
+<!ENTITY enigmail.keyMan.keyDetails.key              "B">
+<!ENTITY enigmail.keyMan.refreshKey.key              "J">
+
+<!ENTITY enigmail.keySearch.selectAll.key            "d">
+
+<!ENTITY enigmail.manageUidDlg.title                 "Փոխել օգտատիրոջ հիմնական նույնարկիչը">
+<!ENTITY enigmail.manageUidDlg.affectedKey.label     "Բանալին փոփոխվում է․">
+<!ENTITY enigmail.manageUidDlg.availableUid.label    "օգտատիրոջ նույնարկիչ․">
+<!ENTITY enigmail.manageUidDlg.addUid.label          "ավելացնել">
+<!ENTITY enigmail.manageUidDlg.revokeUid.label       "Հետ կանչել">
+<!ENTITY enigmail.manageUidDlg.setPrimary.label      "Սարքել հիմնական">
+
+<!ENTITY enigmail.keyDetails.title                   "Բանալու յատկություններ">
+<!ENTITY enigmail.keyDetails.signaturesTab           "վավերացում">
+<!ENTITY enigmail.keyDetails.structureTab            "Կազմվածք">
+<!ENTITY enigmail.keyDetails.uidCertifiedCol         "օգտատիրոջ/ վստահված անձի նույնարկիչ">
+<!ENTITY enigmail.keyDetails.userId.label            "օգտատիրոջ հիմնական նույնարկիչ">
+<!ENTITY enigmail.keyDetails.ID.label                "նույնարկիչ">
+<!ENTITY enigmail.keyDetails.keyType.label           "Տեսակ">
+<!ENTITY enigmail.keyDetails.keyPart.label           "Բանալու մաս">
+<!ENTITY enigmail.keyDetails.algorithm.label         "Ալգորիթմ">
+<!ENTITY enigmail.keyDetails.size.label              "Չափս">
+<!ENTITY enigmail.keyDetails.created.label           "Ստեղծված">
+<!ENTITY enigmail.keyDetails.expiry.label            "Գործման ժամկետ">
+<!ENTITY enigmail.keyDetails.usage.label             "Գործառույթներ">
+<!ENTITY enigmail.keyDetails.fingerprint.label       "Հետք">
+<!ENTITY enigmail.keyDetails.selAction.label         "">
+<!ENTITY enigmail.keyDetails.selAction.accesskey     "c">
+<!ENTITY enigmail.keyDetails.change.label            "Փոփոխել">
+<!ENTITY enigmail.keyDetails.signKey.label           "Վստահում">
+<!ENTITY enigmail.keyDetails.trustStatus.label       "Ձեր վավերացման կարգավորումները">
+<!ENTITY enigmail.keyDetails.keyValidity.label       "վավերություն">
+<!ENTITY enigmail.keyDetails.alsoKnown.label         "Այլ նույնարկիչներ՝">
+<!ENTITY enigmail.keyDetails.copyFpr.tooltip         "">
+
+<!ENTITY enigmail.cardDetails.title                  "Տեղեկություն ծածկագրման քարտեզի մասին">
+<!ENTITY enigmail.cardDetails.cardMenu.label         "Ծածկագրային քարտեզ">
+<!ENTITY enigmail.cardDetails.adminPin.label         "Փոխել PIN֊ը">
+<!ENTITY enigmail.cardDetails.genCardKey.label       "Ստեղծել բանալի">
+
+<!ENTITY enigmail.cardDetails.vendor.label           "Արտադրիչ">
+<!ENTITY enigmail.cardDetails.serial.label           "Հերթական համար">
+<!ENTITY enigmail.cardDetails.name.label             "Անուն, Ազգանուն">
+<!ENTITY enigmail.cardDetails.lang.label             "Լեզու">
+<!ENTITY enigmail.cardDetails.sex.label              "Սեռ">
+<!ENTITY enigmail.cardDetails.url.label              "Բաց բանալու URL">
+<!ENTITY enigmail.cardDetails.login.label            "հաշիվ">
+<!ENTITY enigmail.cardDetails.forcepin.label         "Պահանջել PIN ամեն ամեն ստորագրության ժամանակ">
+<!ENTITY enigmail.cardDetails.maxpinlen.label        "PIN֊ի գերագույն երկարությունը">
+<!ENTITY enigmail.cardDetails.pinretry.label         "PIN մուտքագրելու փորձերի հաշվիչ">
+<!ENTITY enigmail.cardDetails.sigcount.label         "Ստորագրությունների հաշվիչ">
+<!ENTITY enigmail.cardDetails.sigKey.label           "Ստորագրման բանալի">
+<!ENTITY enigmail.cardDetails.keyCreated.label       "Ստեղծված">
+<!ENTITY enigmail.cardDetails.encKey.label           "գաղտնագրման բանալի">
+<!ENTITY enigmail.cardDetails.authKey.label          "Անձի վավերականության բանալի">
+<!ENTITY enigmail.cardDetails.yes.label              "Այո">
+<!ENTITY enigmail.cardDetails.no.label               "Ոչ">
+<!ENTITY enigmail.cardDetails.male.label             "Արական">
+<!ENTITY enigmail.cardDetails.female.label           "Իգական">
+<!ENTITY enigmail.cardDetails.editData.label         "Քարտի տվյալների խմբագրիչ">
+<!ENTITY enigmail.cardDetails.save.label             "Պահել">
+<!ENTITY enigmail.cardDetails.reset.label            "Զրոյացնել">
+<!ENTITY enigmail.cardDetails.closeWindow.label      "Փակել">
+
+<!ENTITY enigmail.cardDetails.adminPin.accesskey     "g">
+<!ENTITY enigmail.cardDetails.genCardKey.accesskey   "U">
+<!ENTITY enigmail.cardDetails.cardMenu.accesskey     "c">
+<!ENTITY enigmail.cardDetails.editData.accesskey     "c">
+
+<!ENTITY enigmail.genCardKey.title                   "OpenPGP բանալու ստեղծում">
+<!ENTITY enigmail.genCardKey.backupKey.label         "">
+<!ENTITY enigmail.genCardKey.desc                    "&lt;a class='enigmailStrong'&gt;Ծանոթագրություն․
+բանալիների ստեղծումը կարող է տևել մի քանի րոպե։&lt;/a&gt; Մի փակեք ծրագիրը այդ գործընթացի ժամանակ։ Ձեզ կտեղեկացնեն ավարտի մասին։">
+
+<!ENTITY enigmail.cardPin.title                      "PIN Քարտի փոխում">
+<!ENTITY enigmail.cardPin.action.label               "">
+<!ENTITY enigmail.cardPin.changePin.label            "Փոխել PIN֊ը">
+<!ENTITY enigmail.cardPin.changeAdmPin.label         "Փոխել համավարչի PIN֊ը">
+<!ENTITY enigmail.cardPin.unblockPin.label           "Ապակողպել PIN֊ը">
+<!ENTITY enigmail.cardPin.currAdmPin.label           "Համավարչի ընթացիկ PIN֊ը">
+<!ENTITY enigmail.cardPin.newAdminPin.label          "Համավարչի նոր PIN֊ը">
+<!ENTITY enigmail.cardPin.adminPinRepeat.label       "Կրկնեք նոր PIN֊ը">
+<!ENTITY enigmail.cardPin.currPin.label              "Ընթացիկ PIN">
+<!ENTITY enigmail.cardPin.newPin.label               "Նոր PIN">
+<!ENTITY enigmail.cardPin.pinRepeat.label            "Կրկնեք նոր PIN֊ը">
+
+<!-- wizard: welcome step -->
+<!ENTITY enigmail.setupWiz.title                     "Enigmail կարգավորումների խորհրդատու">
+<!ENTITY enigmail.setupWiz.pgIntro.desc              "Դուք, ոնց որ առաջին անգամ Եք միացրել Enigmail֊ը այս համակարգչում։
+Enigmail֊ը օգտագործելու համար այն պետք է ճիշտ կարգավորել։
+Այս օգնականը կանցկացնի Ձեզ կարգավորումների գործընթացների միջով։">
+
+<!ENTITY enigmail.setupWiz.insepctingEnv             "">
+<!ENTITY enigmail.setupWiz.usingGnuPG                "">
+<!ENTITY enigmail.setupWiz.usingOpenpgpJS            "">
+<!ENTITY enigmail.setupWiz.checkingSetup             "">
+<!ENTITY enigmail.setupWiz.startSetupButton          "Սկսել կարգավորումը">
+<!ENTITY enigmail.setupWiz.existingEncryptedMsg      "Մենք հայտնաբերեցինք, որ դուք գաղտնագրված հաղորդագրություններ ունեք ձեր փոստային թղթապանակներում: Առաջարկում ենք արտահանել ձեր բանալիները առկա սարքում և ներմուծել դրանք այստեղ: (Նշում. Դուք կարող եք օգտագործել «Ներմուծել բանալիներ» մի քանի անգամ, օրինակ՝ հանրային և գաղտնի բանալիներ ներմուծելու համար):">
+<!ENTITY enigmail.setupWiz.existingKeysFound         "">
+<!ENTITY enigmail.setupWiz.applyExistingKeysBtn      "Ընդունել իմ բանալիները">
+<!ENTITY enigmail.setupWiz.rescanInboxBtn            "Վերստուգել փոստը">
+<!ENTITY enigmail.setupWiz.importKeysBtn             "Ներածել բանալիներ">
+
+<!ENTITY enigmail.amPrefPgp.sendKeyWithMsg.label     "Կցել իմ բաց բանալին նամակներին">
+<!ENTITY enigmail.amPrefPgp.sendKeyWithMsg.accesskey "С">
+
+<!ENTITY enigmail.addPhoto.question.label            "Յավելե՞լ հետևյալ պատկերը բանալուն։">
+<!ENTITY enigmail.addPhoto.title                     "Պատկերի յավելում բանալուն">
+<!ENTITY enigmail.msgViewColumn.tooltip              "Տեսակավորել ըստ OpenPGP կարգավիճակի">
+<!ENTITY enigmail.addToRule.title                    "Յավելել բանալին հասցեատիրոջ կանոններին">
+<!ENTITY enigmail.addToRule.useRuleButton.label      "Յավելել բանալին ընտրված կանոնին">
+<!ENTITY enigmail.addToRule.useRuleButton.accesskey  "d">
+<!ENTITY enigmail.addToRule.newRuleButton.label      "Նոր կանոն">
+<!ENTITY enigmail.addToRule.newRuleButton.accesskey  "N">
+
+<!ENTITY enigmail.savelogfile.label                   "">
+
+<!ENTITY enigmail.filterEditor.moveError.label       "Գործողություններ «Լիովին վերծանել»֊ից Հետո չի աջակցվում։">
+<!ENTITY enigmail.filterEditor.encryptToKey.label    "">
+
+<!-- Export wizard -->
+<!ENTITY enigmail.exportWiz.title                    "Ներածել Enigmail ֊ի կարգավորումները">
+<!ENTITY enigmail.exportWiz.pgIntro.title            "Բարի գալուստ կարգավորումների ներածման խորհրդատու">
+<!ENTITY enigmail.exportWiz.pgIntro.desc             "Enigmail- ը թույլ է տալիս փոխանցել իր բոլոր կարգավորումները, ներառյալ ձեր OpenPGP 
+ նոր համակարգչի բանալիները: Դա արվում է երկու քայլով.">
+<!ENTITY enigmail.exportWiz.pgIntro.step1            "արտածել Ձեր տվյալները հին համակարգչից օգտագործելով այս խորհրդատուն">
+<!ENTITY enigmail.exportWiz.pgIntro.step2            "ներածել տվյալներ նոր համակարգչում օգտագործելով կազմաձևման խորհրդատուն։">
+<!ENTITY enigmail.exportWiz.pgIntro.specifyFile      "Ընտրեք նիշ արտածման համար․">
+<!ENTITY enigmail.exportWiz.pgExport.title           "Ատրածվում են Enigmail֊ի կարգավորումները">
+<!ENTITY enigmail.exportWiz.pgExport.exporting       "Պահում։ Հնարավոր է պահանջուի ներմուծել գազտնաբառային արտահայթությունները բանալիների համար։">
+<!ENTITY enigmail.exportWiz.pgExport.done            "Ձեր բանալիները և Enigmail֊ի կարգավորումները պահված են։
+Տեղափոխեք ստեղծված նիշերը նոր համակարգիչ, միացրեք փոստային ծրագիրը և աշխատացրեք տեղակայման խորհրդատուն Enigmail֊ի ընտրացանկում։">
+<!ENTITY enigmail.exportWiz.pgExport.failed          "Արտածման ժամանակ հայտնվեց սխալ։
+Կարգավորումները չեն արտածուել։">
+
+<!ENTITY enigmail.acPreferEncrypt.label              "">
+<!ENTITY enigmail.acPreferEncrypt.accesskey          "g">
+<!ENTITY enigmail.enableAutocrypt.label              "Միացնել ինքնագաղտնագրումը">
+<!ENTITY enigmail.enableAutocrypt.accesskey          "c">
+
+<!ENTITY enigmail.acSetupPasswd.dlgTitle             "Ինքնագաղտնագրման կարգավորման կոդ">
+<!ENTITY enigmail.acSetupPasswd.password             "Կարգավորման կոդ․">
+
+<!ENTITY enigmail.acKeyTransfer.window.title         "Բանալիներ փոխանցում ինքնագաղտնագրումով">
+<!ENTITY enigmail.acKeyTransfer.welcome.title        "Փոխանցել բանալիները">
+<!ENTITY enigmail.acKeyTransfer.welcome.desc1        "Եթե ունեք մեկ այլ սարք, որն ինքնաշխատունակ է, դուք կարող Եք Ձեր բանալին փոխանցել մյուս սարքին, այսպես կոչված, «Autocrypt Setup հաղորդագրություն»֊ի միջոցով:
+ Նման հաղորդագրությունը թույլ կտա ձեր մյուս սարքին ուղարկել Enigmail- ի նման գաղտնագրված էլ-նամակներ, ընդամենը մի քանի կտտոցով:">
+<!ENTITY enigmail.acKeyTransfer.welcome.desc2        "Խնդրում ենք ներքևում ընտրել այն հաշիվը, որին ցանկանում եք փոխանցել ձեր բանալին:
+Հաջորդ էկրանին մենք կցուցադրենք կարգաբերման կոդ (գաղտնաբառ), որը դուք պետք է մուտքագրեք մյուս սարքը `ձեր բանալին և հարակից կարգավորումները ներմուծելու համար:">
+
+<!ENTITY enigmail.acKeyTransfer.selectAccount.label  "Ստեղծել կարգավորման նամակ հաշվի համար․">
+<!ENTITY enigmail.acKeyTransfer.displayPasswd.title  "Ինքնագաղտնագրման կարգավորման նամակի կոդը․">
+<!ENTITY enigmail.acKeyTransfer.msgCreated.desc1     "Կազմաձևման նամակը ուղարկվել է Ձեզ։">
+<!ENTITY enigmail.acKeyTransfer.msgCreated.desc2     "Խնդրում ենք հիմա անցնել մյուս սարքին և բացել հաղորդագրությունը: Ձեզ պետք է հուշեն կարգաբերման կոդ: Խնդրում ենք մուտքագրել հուշում հետևյալ թվանշանները.">
+<!ENTITY enigmail.acKeyTransfer.switchDevice.desc    "Այդ ամենից հետո Ձեր այլ սարքը կարող է աշխատել ինքնագաղտնագրումով։">
+
+<!ENTITY enigmail.importSetup.dlgTitle               "Վերականգնել հարաչափերը և բանալիները">
+<!ENTITY enigmail.importSetup.topDesc                "Օգտագործելով այս երկխոսությունը, կարող եք վերականգնել ձեր տեղակայումները ու բանալիները առկա Enigmail տեղակայումից: Ձեր կարգավորումների և բանալիների կրկնօրինակման համար օգտագործեք «Փոխանցման կարգավորումներ» ներդիրը Enigmail- ի նախընտրություններում:">
+<!ENTITY enigmail.importSetup.specifyImportFile      "Խնդրում ենք նշել պահեստային նիշքը, որը կօգտագործվի Ձեր կարգավորումները և բանալիները վերականգնելու համար.">
+<!ENTITY enigmail.importSetup.startRestoreLabel      "Սկսել վերականգնումը">
+<!ENTITY enigmail.importSetup.importingKeys          "">
+<!ENTITY enigmail.importSetup.restoringGnupgSettings "">
+<!ENTITY enigmail.importSetup.restoringEnigmail      "">
+
+<!ENTITY enigmail.changePasswd.title                 "">
+<!ENTITY enigmail.changePasswd.currPasswd.label      "">
+<!ENTITY enigmail.changePasswd.newPasswd.label       "">
+<!ENTITY enigmail.changePasswd.repeatPasswd.label    "">
+<!ENTITY enigmail.changePasswd.qualityMeter.label    "">
+<!ENTITY enigmail.changePasswd.passwdDontMatch.label "">

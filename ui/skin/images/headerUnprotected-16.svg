@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="2.6199999"
+   inkscape:export-xdpi="2.6199999"
+   inkscape:export-filename="/Users/pbr/enigmail/Logo/Enigmail Icon V3 16x16.png"
+   sodipodi:docname="headerUnprotected-16.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   version="1.1"
+   id="svg3423"
+   viewBox="0 0 14.999999 15"
+   height="16"
+   width="16">
+  <defs
+     id="defs3425">
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient4972">
+      <stop
+         id="stop4974"
+         offset="0"
+         style="stop-color:#d5d211;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient4964">
+      <stop
+         id="stop4966"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2780">
+      <stop
+         offset="0"
+         style="stop-color:#ffffff"
+         id="stop2782" />
+      <stop
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:0"
+         id="stop2784" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2834">
+      <stop
+         offset="0"
+         style="stop-color:#e59a00"
+         id="stop2836" />
+      <stop
+         offset="1"
+         style="stop-color:#faff7d;stop-opacity:.18367"
+         id="stop2838" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3057">
+      <stop
+         offset="0"
+         style="stop-color:#282828"
+         id="stop3059" />
+      <stop
+         offset="1"
+         style="stop-color:#282828;stop-opacity:0"
+         id="stop3061" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2713">
+      <stop
+         offset="0"
+         style="stop-color:#000000"
+         id="stop2715" />
+      <stop
+         offset="1"
+         style="stop-color:#ffffff"
+         id="stop2717" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     inkscape:document-rotation="0"
+     inkscape:snap-grids="false"
+     units="px"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     inkscape:window-maximized="0"
+     inkscape:window-y="25"
+     inkscape:window-x="156"
+     inkscape:window-height="853"
+     inkscape:window-width="1527"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     showgrid="false"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="px"
+     inkscape:cy="12.640642"
+     inkscape:cx="13.946129"
+     inkscape:zoom="20"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <inkscape:grid
+       originy="-124.88544"
+       originx="-299.99048"
+       id="grid4919"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3428">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     transform="translate(-299.99051,-910.60174)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       transform="matrix(0.66750906,0,0,0.66750906,99.73443,303.87033)"
+       id="g3666">
+      <path
+         style="fill:none;stroke:#646464;stroke-width:3.11448;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
+         d="m 320.26194,921.03329 c -6.7632,-7.32556 -11.39727,-7.48838 -18.03525,0 7.54503,6.39268 10.92664,6.38942 18.03525,0 z"
+         id="path3069"
+         sodipodi:nodetypes="ccc" />
+      <ellipse
+         style="opacity:0.992;fill:#808080;fill-opacity:1;stroke:#808080;stroke-width:1.46438;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path3634"
+         cx="311.24051"
+         cy="920.67987"
+         rx="1.3770404"
+         ry="1.3770403" />
+    </g>
+  </g>
+</svg>

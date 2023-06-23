@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   viewBox="0 0 14.999999 15"
+   id="svg3423"
+   version="1.1"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="headerProtected-16.svg"
+   inkscape:export-filename="/Users/pbr/enigmail/Logo/Enigmail Icon V3 16x16.png"
+   inkscape:export-xdpi="2.6199999"
+   inkscape:export-ydpi="2.6199999">
+  <defs
+     id="defs3425">
+    <linearGradient
+       id="linearGradient4972"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#d5d211;stop-opacity:1;"
+         offset="0"
+         id="stop4974" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4964"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4966" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2780">
+      <stop
+         id="stop2782"
+         style="stop-color:#ffffff"
+         offset="0" />
+      <stop
+         id="stop2784"
+         style="stop-color:#ffffff;stop-opacity:0"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2834">
+      <stop
+         id="stop2836"
+         style="stop-color:#e59a00"
+         offset="0" />
+      <stop
+         id="stop2838"
+         style="stop-color:#faff7d;stop-opacity:.18367"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3057">
+      <stop
+         id="stop3059"
+         style="stop-color:#282828"
+         offset="0" />
+      <stop
+         id="stop3061"
+         style="stop-color:#282828;stop-opacity:0"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2713">
+      <stop
+         id="stop2715"
+         style="stop-color:#000000"
+         offset="0" />
+      <stop
+         id="stop2717"
+         style="stop-color:#ffffff"
+         offset="1" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="20"
+     inkscape:cx="1.6754224"
+     inkscape:cy="10.157837"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1527"
+     inkscape:window-height="853"
+     inkscape:window-x="70"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:snap-grids="false"
+     inkscape:document-rotation="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4919"
+       originx="-299.99048"
+       originy="-124.88544" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3428">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-299.99051,-910.60174)"
+     style="display:inline">
+    <g
+       transform="matrix(0.66750823,0,0,0.6675166,99.734685,303.86343)"
+       id="g3694">
+      <path
+         sodipodi:nodetypes="ccc"
+         id="path3069"
+         d="m 302.21974,921.03329 c 6.7632,-7.32556 11.39727,-7.48838 18.03525,0 -7.54503,6.39268 -10.92664,6.38942 -18.03525,0 z"
+         style="fill:none;stroke:#ec8020;stroke-width:3.11448;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="1.3770403"
+         rx="1.3770404"
+         cy="920.67987"
+         cx="311.24051"
+         id="path3634"
+         style="opacity:0.992;fill:#0000ff;fill-opacity:1;stroke:#0000ff;stroke-width:1.46467;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

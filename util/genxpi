@@ -1,0 +1,209 @@
+#!/bin/sh
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+#
+# This script generates the Enigmail XPI
+#
+
+echo "genxpi: Generating $1 in $3"
+
+if [ $# -lt 5 ]; then
+  echo "Wrong number of parameters"
+  exit 1
+fi
+
+xpiFile=$1
+targetTool="$2"
+distDir="$3"
+srcDir=$4
+xpiModule=$5
+enableLang=$6
+
+cd ${srcDir}
+cwd=`pwd`
+cd "$distDir"
+targetDir=`pwd`
+cd "$cwd"
+
+# Prepare chrome.manifest
+cat  ${srcDir}/package/chrome.manifest \
+> ${targetDir}/chrome.manifest
+
+if [ "${targetTool}" = "itl" ]; then
+  # Interlink: "classical XUL addon"
+  cat ${srcDir}/package/chrome-interlink.txt >> ${targetDir}/chrome.manifest
+  startupFile=enigmail-startup.js
+else
+  cat ${srcDir}/package/chrome-postbox.txt >> ${targetDir}/chrome.manifest
+  startupFile=bootstrap.js
+fi
+
+# Prepare languages other than en-US
+
+if [ "$enableLang" = "yes" ]; then
+  if [ -s ${srcDir}/lang/current-languages.txt ]; then
+    echo '' >> ${targetDir}/chrome.manifest
+    echo '# Additional languages' >> ${targetDir}/chrome.manifest
+
+    for lang in `cat ${srcDir}/lang/current-languages.txt`; do
+      echo 'locale        enigmail    '$lang'       chrome/locale/'$lang'/' >> ${targetDir}/chrome.manifest
+    done
+  fi
+fi
+
+# define which package file to include in package
+
+if [ "${targetTool}" = "tbird" ]; then
+  # Thunderbird (Gecko 68 or newer)
+  pkgFile=manifest.json
+else
+  pkgFile=install.rdf
+fi
+
+cd "$targetDir"
+
+find chrome/content/modules -name "*.js*" | LC_ALL=C sort > chrome/content/modules/all-modules.txt
+
+echo "Creating ${xpiFile} file"
+
+# Avoid embedding time zone information about the current system into the XPI
+export TZ=UTC
+
+set chrome/content/preferences/defaultPrefs.js \
+    chrome/content/modules/addrbook.jsm \
+    chrome/content/modules/amPrefsService.jsm \
+    chrome/content/modules/app.jsm \
+    chrome/content/modules/armor.jsm \
+    chrome/content/modules/attachment.jsm \
+    chrome/content/modules/autocrypt.jsm \
+    chrome/content/modules/autoSetup.jsm \
+    chrome/content/modules/buildDate.jsm \
+    chrome/content/modules/card.jsm \
+    chrome/content/modules/clipboard.jsm \
+    chrome/content/modules/commandLine.jsm \
+    chrome/content/modules/configure.jsm \
+    chrome/content/modules/constants.jsm \
+    chrome/content/modules/cryptoAPI.jsm \
+    chrome/content/modules/cryptoAPI/gnupg-keyEditor.jsm \
+    chrome/content/modules/cryptoAPI/gpgme.js \
+    chrome/content/modules/cryptoAPI/openpgp-js.js \
+    chrome/content/modules/cryptoAPI/pgpjs-encrypt.jsm \
+    chrome/content/modules/cryptoAPI/pgpjs-crypto-main.jsm \
+    chrome/content/modules/cryptoAPI/pgpjs-crypto-worker.js \
+    chrome/content/modules/cryptoAPI/pgpjs-keys.jsm \
+    chrome/content/modules/cryptoAPI/pgpjs-keymanipulation.jsm \
+    chrome/content/modules/cryptoAPI/pgpjs-keystore.jsm \
+    chrome/content/modules/cryptoAPI/interface.js \
+    chrome/content/modules/data.jsm \
+    chrome/content/modules/dns.jsm \
+    chrome/content/modules/decryption.jsm \
+    chrome/content/modules/persistentCrypto.jsm \
+    chrome/content/modules/dialog.jsm \
+    chrome/content/modules/core.jsm \
+    chrome/content/modules/configBackup.jsm \
+    chrome/content/modules/enigmailOverlays.jsm \
+    chrome/content/modules/enigmailUpdate.jsm \
+    chrome/content/modules/errorHandling.jsm \
+    chrome/content/modules/funcs.jsm \
+    chrome/content/modules/gnupgUpdate.jsm \
+    chrome/content/modules/protocolHandler.jsm \
+    chrome/content/modules/events.jsm \
+    chrome/content/modules/execution.jsm \
+    chrome/content/modules/files.jsm \
+    chrome/content/modules/filters.jsm \
+    chrome/content/modules/filtersWrapper.jsm \
+    chrome/content/modules/fixExchangeMsg.jsm \
+    chrome/content/modules/glodaUtils.jsm \
+    chrome/content/modules/hash.jsm \
+    chrome/content/modules/httpProxy.jsm \
+    chrome/content/modules/installGnuPG.jsm \
+    chrome/content/modules/key.jsm \
+    chrome/content/modules/keyObj.jsm \
+    chrome/content/modules/keyRing.jsm \
+    chrome/content/modules/keyUsability.jsm \
+    chrome/content/modules/keyRefreshService.jsm \
+    chrome/content/modules/keyserver.jsm \
+    chrome/content/modules/keyserverUris.jsm \
+    chrome/content/modules/lazy.jsm \
+    chrome/content/modules/locale.jsm \
+    chrome/content/modules/localizeHtml.jsm \
+    chrome/content/modules/log.jsm \
+    chrome/content/modules/mime.jsm \
+    chrome/content/modules/mimeDecrypt.jsm \
+    chrome/content/modules/mimeEncrypt.jsm \
+    chrome/content/modules/mimeVerify.jsm \
+    chrome/content/modules/msgRead.jsm \
+    chrome/content/modules/os.jsm \
+    chrome/content/modules/openpgp.jsm \
+    chrome/content/modules/overlays.jsm \
+    chrome/content/modules/passwordCheck.jsm \
+    chrome/content/modules/passwords.jsm \
+    chrome/content/modules/pgpmimeHandler.jsm \
+    chrome/content/modules/pipeConsole.jsm \
+    chrome/content/modules/prefs.jsm \
+    chrome/content/modules/rng.jsm \
+    chrome/content/modules/rules.jsm \
+    chrome/content/modules/searchCallback.jsm \
+    chrome/content/modules/send.jsm \
+    chrome/content/modules/singletons.jsm \
+    chrome/content/modules/socks5Proxy.jsm \
+    chrome/content/modules/stdlib/compose.jsm \
+    chrome/content/modules/stdlib/misc.jsm \
+    chrome/content/modules/stdlib/msgHdrUtils.jsm \
+    chrome/content/modules/stdlib/openpgp-loader.jsm \
+    chrome/content/modules/stdlib/openpgp-lib.js \
+    chrome/content/modules/stdlib/web-streams.jsm \
+    chrome/content/modules/stdlib.jsm \
+    chrome/content/modules/streams.jsm \
+    chrome/content/modules/subprocess.jsm \
+    chrome/content/modules/enigmailprocess_shared_unix.js \
+    chrome/content/modules/enigmailprocess_worker_common.js \
+    chrome/content/modules/enigmailprocess_common.jsm \
+    chrome/content/modules/enigmailprocess_shared_win.js \
+    chrome/content/modules/enigmailprocess_worker_unix.js \
+    chrome/content/modules/enigmailprocess_main.jsm \
+    chrome/content/modules/enigmailprocess_unix.jsm \
+    chrome/content/modules/enigmailprocess_worker_win.js \
+    chrome/content/modules/enigmailprocess_shared.js \
+    chrome/content/modules/enigmailprocess_win.jsm \
+    chrome/content/modules/sqliteDb.jsm \
+    chrome/content/modules/system.jsm \
+    chrome/content/modules/compat.jsm \
+    chrome/content/modules/time.jsm \
+    chrome/content/modules/timer.jsm \
+    chrome/content/modules/trust.jsm \
+    chrome/content/modules/uris.jsm \
+    chrome/content/modules/verify.jsm \
+    chrome/content/modules/versioning.jsm \
+    chrome/content/modules/webKey.jsm \
+    chrome/content/modules/wkdLookup.jsm \
+    chrome/content/modules/windows.jsm \
+    chrome/content/modules/wksMimeHandler.jsm \
+    chrome/content/modules/xhrUtils.jsm \
+    chrome/content/modules/zbase32.jsm \
+    chrome/content/modules/all-modules.txt \
+    chrome/content/am-enigprefs.xul
+
+# Set modification timestamps to a fixed value for reproducibilty
+[ -n "$SOURCE_DATE_EPOCH" ] && touch --date "@$SOURCE_DATE_EPOCH" -- "$@"
+zip -9 -o -X --must-match ../${xpiFile} "$@"
+
+if [ $? -ne 0 ]; then
+  exit 1
+fi
+
+set chrome/content/ui/*.* \
+    chrome/skin/*/*.* \
+    chrome/locale/*/*.* \
+    chrome/locale/*/help/*.* \
+    chrome/content/jsunit/*.* \
+    ${startupFile} \
+    chrome.manifest \
+    ${pkgFile}
+
+# Set modification timestamps to a fixed value for reproducibilty
+[ -n "$SOURCE_DATE_EPOCH" ] && touch --date "@$SOURCE_DATE_EPOCH" -- "$@"
+zip -9 -o -X ../${xpiFile} "$@"

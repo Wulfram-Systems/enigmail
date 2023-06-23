@@ -1,0 +1,2 @@
+# Skin for Postbox (Mac OS X and Windows)
+skin          enigmail    classic/1.0 chrome/skin/postbox/ platformversion>=51.0

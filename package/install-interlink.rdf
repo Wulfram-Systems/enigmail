@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <!-- NOTE: This file must not be used for Gecko 68+ (Thunderbid 68+) -->
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{847b3a00-7ab1-11d4-8f02-006008948af5}</em:id>
+    <em:version>${EnigmailVersion}</em:version>
+    <em:type>2</em:type> <!-- type 2 = extension -->
+    <em:bootstrap>false</em:bootstrap>
+
+    <!-- Target Applications this extension can install into,
+         with minimum and maximum supported versions. -->
+
+    <em:targetApplication>
+      <!-- Interlink (Thunderbird) -->
+      <Description>
+        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
+        <em:minVersion>52.0</em:minVersion>
+        <em:maxVersion>52.9.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+
+  <em:targetApplication>
+      <!-- Epyrus -->
+      <Description>
+        <em:id>{29877c1d-27df-4421-9a79-382c31470151}</em:id>
+        <em:minVersion>2.0</em:minVersion>
+        <em:maxVersion>2.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <em:targetApplication>
+      <!-- SeaMonkey -->
+      <Description>
+        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+        <em:minVersion>2.0</em:minVersion>
+        <em:maxVersion>2.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <em:updateURL>https://enigmail.net/service/getEnigmailUpdate.svc?appId=%APP_ID%&amp;appVersion=%APP_VERSION%&amp;itemVersion=%ITEM_VERSION%</em:updateURL>
+
+    <!-- Front End MetaData -->
+    <em:name>Enigmail</em:name>
+    <em:description>OpenPGP message encryption and authentication</em:description>
+    <em:creator>Enigmail Team</em:creator>
+    <em:homepageURL>https://www.enigmail.net/</em:homepageURL>
+
+    <!-- Front End Integration Hooks (used by Extension Manager)-->
+    <em:aboutURL>chrome://enigmail/content/ui/enigmailAbout.xul</em:aboutURL>
+    <em:optionsURL>chrome://enigmail/content/ui/pref-enigmail.xul</em:optionsURL>
+    <em:iconURL>chrome://enigmail/skin/enigmail-about.svg</em:iconURL>
+
+  </Description>
+
+</RDF>

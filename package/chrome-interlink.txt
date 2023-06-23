@@ -1,0 +1,36 @@
+# Skin for Interlink (Linux and Windows)
+skin          enigmail    classic/1.0 chrome/skin/interlink/
+skin          enigmail    photonic chrome/skin/photonic/
+
+# Register Enigmail Service for Interink
+component {f4d4138e-dd4d-4cb0-b408-a41429d38e34} enigmail-startup.js
+contract @mozilla.org/enigmail/cline-handler;1 {f4d4138e-dd4d-4cb0-b408-a41429d38e34}
+category command-line-handler cline-enigmail @mozilla.org/enigmail/cline-handler;1
+
+# Main messenger window (and single message reading window)
+overlay chrome://messenger/content/msgHdrViewOverlay.xul chrome://enigmail/content/ui/columnOverlay.xul application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+overlay chrome://messenger/content/msgHdrViewOverlay.xul chrome://enigmail/content/ui/messengerOverlay-tbird.xul application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+overlay chrome://messenger/content/msgHdrViewOverlay.xul chrome://enigmail/content/ui/messengerOverlay-sm.xul application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+#overlay chrome://messenger/content/msgHdrViewOverlay.xul chrome://enigmail/content/ui/enigmailMessengerOverlay.xul application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+overlay chrome://messenger/content/msgHdrViewOverlay.xul chrome://enigmail/content/ui/enigmailMessengerOverlay.xul
+overlay chrome://messenger/content/msgHdrViewOverlay.xul chrome://enigmail/content/ui/enigmailMsgHdrViewOverlay.xul application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+
+# Message composition window
+overlay chrome://messenger/content/messengercompose/messengercompose.xul chrome://enigmail/content/ui/enigmailMsgComposeOverlay.xul application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+
+# Filter Editor
+overlay chrome://messenger/content/FilterEditor.xul chrome://enigmail/content/ui/tb60FilterEditorOverlay.xul
+
+# Account Manager
+overlay chrome://messenger/content/am-identity-edit.xul chrome://enigmail/content/ui/enigmailAmIdEditOverlay.xul application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+overlay chrome://messenger/content/am-identity-edit.xul chrome://enigmail/content/ui/enigmailEditIdentity.xul application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+overlay chrome://messenger/content/AccountManager.xul chrome://enigmail/content/ui/accountManagerOverlay.xul application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+
+# Single Account window
+overlay chrome://enigmail/content/ui/editSingleAccount.xul chrome://enigmail/content/ui/enigmailEditIdentity.xul application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+
+# Address book
+overlay chrome://messenger/content/addressbook/addressbook.xul chrome://enigmail/content/ui/enigmailAbCardViewOverlay.xul application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
+
+# Customize Toolbar Window
+overlay chrome://global/content/customizeToolbar.xul chrome://enigmail/content/ui/enigmailCustToolOverlay.xul application!={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
